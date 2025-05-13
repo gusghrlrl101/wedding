@@ -25,3 +25,7 @@ img.main-image {
   margin: 0 auto;
   border-radius: 12px;
 }
+
+.image-gallery-slides {
+  touch-action: pan-y !important; /* 위아래 스크롤 허용 */
+}
