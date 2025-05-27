@@ -39,13 +39,28 @@ export default function NaverMap({
       const map = new naver.maps.Map("map", {
         center: location,
         zoom: 16,
+        disableDoubleTapZoom: true,
+        pinchZoom: true,
+        draggable: false,
       });
 
-      new naver.maps.Marker({
+      const marker = new naver.maps.Marker({
         position: location,
         map,
         title: placeName,
       });
+
+      var contentString = [
+        "<div>",
+        "<h3 style='margin:5px'>더파티움 안양</h3>",
+        "<p style='margin:5px'>4호선 평촌역 3번 출구</p>",
+        "</div>",
+      ].join("");
+
+      const infoWindow = new naver.maps.InfoWindow({
+        content: contentString,
+      });
+      infoWindow.open(map, marker);
     });
   }, [lat, lng, placeName]);
 

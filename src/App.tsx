@@ -1,4 +1,4 @@
-import Contact from "./components/Contact";
+import AccountInfo from "./components/AccountInfo";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Guestbook from "./components/GuestBook";
@@ -13,12 +13,12 @@ export default function App() {
     <>
       <Header />
       <Message />
-      <Info />
       <NaverMap lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
       <MapLinks lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
+      <Info />
       <Gallery />
       <Guestbook />
-      <Contact />
+      <AccountInfo />
       <Footer />
     </>
   );

@@ -1,5 +1,3 @@
-import React from "react";
-
 interface MapLinksProps {
   lat: number;
   lng: number;
@@ -24,27 +22,16 @@ export default function MapLinks({ lat, lng, placeName }: MapLinksProps) {
           flexWrap: "wrap",
         }}
       >
-        <a href={naverUrl} style={linkStyle}>
+        <a href={naverUrl} className="link">
           네이버 지도
         </a>
-        <a href={kakaoUrl} style={linkStyle}>
+        <a href={kakaoUrl} className="link">
           카카오 지도
         </a>
-        <a href={tmapUrl} style={linkStyle}>
+        <a href={tmapUrl} className="link">
           T맵
         </a>
       </div>
     </div>
   );
 }
-
-const linkStyle: React.CSSProperties = {
-  display: "inline-block",
-  padding: "10px 16px",
-  backgroundColor: "#f0f0f0",
-  borderRadius: "8px",
-  textDecoration: "none",
-  color: "#333",
-  fontWeight: "bold",
-  fontSize: "14px",
-};
