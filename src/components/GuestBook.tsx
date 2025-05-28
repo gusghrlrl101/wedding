@@ -44,11 +44,18 @@ export default function Guestbook() {
         <br />
         저희에게 전하고 싶은 메시지도 남겨주시면 좋아요.
       </p>
-      <label style={{ display: "block", margin: "10px 0" }}>
+      <label
+        style={{
+          display: "block",
+          margin: "10px 0",
+          fontSize: "18px",
+        }}
+      >
         <input
           type="checkbox"
           checked={attending === true}
           onChange={(e) => setAttending(e.target.checked)}
+          style={{ transform: "scale(1.5)", marginRight: "10px" }}
         />
         참석할게요!
       </label>
@@ -68,9 +75,17 @@ export default function Guestbook() {
         style={{ width: "80%", padding: "8px", marginBottom: "10px" }}
       />
       <br />
-      <button type="submit" disabled={submitting}>
+      <a
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          if (!submitting) handleSubmit(e);
+        }}
+        role="button"
+        className="link"
+      >
         {submitting ? "작성 중..." : "작성하기"}
-      </button>
+      </a>
     </form>
   );
 }
