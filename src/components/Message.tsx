@@ -1,7 +1,14 @@
 export default function Message() {
   return (
-    <section style={{ padding: "20px" }}>
-      <h2>초대합니다.</h2>
+    <section
+      style={{
+        margin: "20px 40px",
+        padding: "20px",
+        backgroundColor: "white",
+        borderRadius: "8px",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+      }}
+    >
       <p>
         새벽이 온 줄도 모르게 밤새
         <br />
@@ -17,11 +24,9 @@ export default function Message() {
         더할 나위 없이 아름답게 기억될 거예요.
         <br />
         <br />
-        감사의 마음을 담아,
+        <strong>감사의 마음을 담아,</strong>
         <br />
-        현호와 정민이의 결혼식에 초대합니다.
-        <br />
-        <br />
+        <strong>현호와 정민이의 결혼식에 초대합니다.</strong>
       </p>
     </section>
   );
