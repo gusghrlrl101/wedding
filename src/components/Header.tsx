@@ -1,10 +1,10 @@
 export default function Header() {
-  const infoStyle = { margin: "9px 0" };
+  const infoStyle = { margin: "9px 0", fontSize: "16px" };
 
   return (
     <header style={{ padding: "20px" }}>
       <img src="/main.jpeg" className="main-image" />
-      <h1 style={{ margin: "40px 0 60px 0" }}>
+      <h1 style={{ margin: "40px 0 60px 0", fontSize: "30px" }}>
         손정민 <span style={{ fontSize: "0.6em" }}>♥</span> 임현호
       </h1>
       <h3 style={infoStyle}>2025년 8월 16일 토요일, 오후 2시 30분</h3>

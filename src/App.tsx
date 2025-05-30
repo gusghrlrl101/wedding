@@ -1,7 +1,7 @@
 import AccountInfo from "./components/AccountInfo";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import Guestbook from "./components/GuestBook";
+import Post from "./components/Post";
 import Header from "./components/Header";
 import Message from "./components/Message";
 import Map from "./components/Map";
@@ -15,7 +15,7 @@ export default function App() {
       <Gallery />
       <Map lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
       <Parking />
-      <Guestbook />
+      <Post />
       <AccountInfo />
       <Footer />
     </>
