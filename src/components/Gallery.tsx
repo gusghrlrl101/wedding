@@ -14,8 +14,7 @@ export default function Gallery() {
   });
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>📷 사진첩</h2>
+    <div style={{ margin: "80px 0 20px 0", padding: "20px" }}>
       <ImageGallery
         items={images}
         showPlayButton={false}

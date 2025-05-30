@@ -12,9 +12,9 @@ export default function App() {
     <>
       <Header />
       <Message />
+      <Gallery />
       <NaverMap lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
       <MapLinks lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
-      <Gallery />
       <Guestbook />
       <AccountInfo />
       <Footer />
