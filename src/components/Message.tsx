@@ -23,11 +23,6 @@ export default function Message() {
         <br />
         <br />
       </p>
-      <p>
-        임용구, 홍영임의 아들 🤵 신랑 <strong>임현호</strong>
-        <br />
-        손관익, 김미경의 딸 👰 신부 <strong>손정민</strong>
-      </p>
     </section>
   );
 }
