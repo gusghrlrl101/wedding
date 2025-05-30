@@ -31,7 +31,7 @@ export default function AccountInfo() {
           marginBottom: "20px",
         }}
       >
-        💌 마음 전하실 곳
+        마음 전하실 곳
       </h2>
 
       <div>
