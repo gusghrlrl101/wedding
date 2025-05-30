@@ -3,11 +3,12 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function Gallery() {
   const height = window.innerWidth * (4 / 3); // 4:3 비율
-  const images = Array.from({ length: 16 }, (_, idx) => {
-    const path = `/gallery/image_${idx}.jpg`;
+  const images = Array.from({ length: 32 }, (_, idx) => {
+    const image_path = `/gallery/images/${idx}.jpeg`;
+    const thumbnail_path = `/gallery/thumbnails/${idx}.jpeg`;
     return {
-      original: path,
-      thumbnail: path,
+      original: image_path,
+      thumbnail: thumbnail_path,
       originalHeight: height,
     };
   });
