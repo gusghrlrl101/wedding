@@ -7,14 +7,14 @@ export default function AccountInfo() {
   );
 
   const accountStyle = {
-    marginBottom: "16px",
+    marginBottom: "20px",
   };
   const buttonStyle = {
     padding: "10px 20px",
     border: "none",
     borderRadius: "5px",
     cursor: "pointer",
-    marginRight: "10px",
+    margin: "10px 10px",
   };
 
   return (

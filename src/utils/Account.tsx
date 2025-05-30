@@ -6,7 +6,7 @@ interface AccountProps {
 export default function Account({ bankName, accountNumber }: AccountProps) {
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text).then(() => {
-      alert("계좌번호가 복사되었습니다!");
+      alert(`계좌번호가 복사되었습니다!\n${text}`);
     });
   };
 
