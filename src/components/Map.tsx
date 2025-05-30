@@ -1,18 +1,24 @@
 import { useEffect } from "react";
 
-interface NaverMapProps {
+interface MapProps {
   lat: number;
   lng: number;
   placeName?: string;
   height?: string;
 }
 
-export default function NaverMap({
+export default function Map({
   lat,
   lng,
   placeName = "장소",
   height = "300px",
-}: NaverMapProps) {
+}: MapProps) {
+  const encodedPlace = encodeURIComponent(placeName);
+
+  const naverUrl = `nmap://search?query=${encodedPlace}`;
+  const kakaoUrl = `kakaomap://search?q=${encodedPlace}&p=${lat},${lng}`;
+  const tmapUrl = `tmap://search?name=${encodedPlace}&lon=${lng}&lat=${lat}`;
+
   useEffect(() => {
     const loadScript = () => {
       return new Promise<void>((resolve, reject) => {
@@ -51,9 +57,9 @@ export default function NaverMap({
       });
 
       var contentString = [
-        "<div>",
-        "<h3 style='margin:5px'>더파티움 안양</h3>",
-        "<p style='margin:5px'>4호선 평촌역 3번 출구</p>",
+        "<div style='padding: 5px;'>",
+        "<h3 style='margin:5px; font-size: 0.9em;'><strong>더파티움 안양</strong></h3>",
+        "<p style='margin:5px; font-size: 0.9em;'>4호선 평촌역 3번 출구</p>",
         "</div>",
       ].join("");
 
@@ -65,8 +71,31 @@ export default function NaverMap({
   }, [lat, lng, placeName]);
 
   return (
-    <div style={{ width: "100%", height }}>
-      <div id="map" style={{ width: "100%", height: "100%" }} />
-    </div>
+    <>
+      <div style={{ height, padding: "80px 0 0 0", margin: "20px" }}>
+        <div id="map" style={{ width: "100%", height: "100%" }} />
+      </div>
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <h3 style={{ marginBottom: "10px" }}>📍지도 앱으로 보기</h3>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "10px",
+            flexWrap: "wrap",
+          }}
+        >
+          <a href={naverUrl} className="link">
+            네이버 지도
+          </a>
+          <a href={kakaoUrl} className="link">
+            카카오 지도
+          </a>
+          <a href={tmapUrl} className="link">
+            T맵
+          </a>
+        </div>
+      </div>
+    </>
   );
 }

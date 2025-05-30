@@ -3,9 +3,9 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Guestbook from "./components/GuestBook";
 import Header from "./components/Header";
-import MapLinks from "./components/MapLinks";
 import Message from "./components/Message";
-import NaverMap from "./components/NaverMap";
+import Map from "./components/Map";
+import Parking from "./components/Parking";
 
 export default function App() {
   return (
@@ -13,8 +13,8 @@ export default function App() {
       <Header />
       <Message />
       <Gallery />
-      <NaverMap lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
-      <MapLinks lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
+      <Map lat={37.3960133} lng={126.9645232} placeName="더파티움 안양" />
+      <Parking />
       <Guestbook />
       <AccountInfo />
       <Footer />
