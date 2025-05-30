@@ -7,9 +7,8 @@ export default function Header() {
       <h1 style={{ margin: "40px 0 80px 0", color: "darkgreen" }}>
         손정민 <span style={{ fontSize: "0.6em" }}>♥</span> 임현호
       </h1>
-      <h3 style={infoStyle}>2025년 8월 16일 토요일</h3>
-      <h3 style={infoStyle}>오후 2시 30분</h3>
-      <h3 style={infoStyle}>더파티움 안양, 7층 라포레홀</h3>
+      <h3 style={infoStyle}>2025년 8월 16일 토요일, 오후 2시 30분</h3>
+      <h3 style={infoStyle}>더파티움 안양 7층 라포레홀</h3>
       <p style={{ margin: "60px 0 10px 0" }}>
         임용구, 홍영임의 아들 <strong>신랑 임현호</strong>
       </p>
