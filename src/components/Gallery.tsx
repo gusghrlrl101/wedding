@@ -14,16 +14,12 @@ export default function Gallery() {
   });
 
   return (
-    <div style={{ margin: "80px 0 20px 0", padding: "20px" }}>
+    <div style={{ padding: "20px", marginTop: "80px" }}>
       <ImageGallery
         items={images}
         showPlayButton={false}
         showFullscreenButton={true}
         useBrowserFullscreen={false}
-        // useTranslate3D={false}
-        // lazyLoad={true}
-        // showIndex={true}
-        // slideInterval={1000}
       />
     </div>
   );

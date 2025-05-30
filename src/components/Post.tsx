@@ -38,10 +38,10 @@ export default function Post() {
 
   return (
     <form
+      style={{ padding: "20px", marginTop: "60px" }}
       onSubmit={handleSubmit}
-      style={{ padding: "20px", paddingTop: "80px" }}
     >
-      <h3 style={{ marginBottom: "0px" }}>📮 우체통</h3>
+      <h2 style={{ marginBottom: "0px" }}>📮 우체통</h2>
       <p style={{ marginTop: "10px" }}>
         현호와 정민이에게 이름과 함께 편지를 남겨주세요.
         <br />
@@ -60,22 +60,29 @@ export default function Post() {
         <span style={{ color: "grey" }}>
           눈물이 나오는 감동적인 편지를 써주신 분께
         </span>
-        <br />
       </p>
-      <p style={{ paddingTop: "20px" }}>
+      <div
+        style={{
+          marginTop: "40px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "10px",
+        }}
+      >
         <input
           type="text"
           placeholder="보내는 이"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          style={{ width: "80%", padding: "8px", marginBottom: "10px" }}
+          style={{ width: "80%", padding: "10px" }}
         />
         <textarea
           placeholder="편지 내용"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={4}
-          style={{ width: "80%", padding: "8px", marginBottom: "10px" }}
+          style={{ width: "80%", padding: "10px" }}
         />
         <a
           href="#"
@@ -92,7 +99,7 @@ export default function Post() {
             ? "편지가 잘 보내졌어요!"
             : "편지 보내기"}
         </a>
-      </p>
+      </div>
     </form>
   );
 }

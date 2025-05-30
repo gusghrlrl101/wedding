@@ -15,23 +15,25 @@ body {
   color: #333;
 }
 
-h1,
+h1 {
+  font-size: 30px;
+}
+
 h2 {
-  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
 }
 
 a {
   color: #007aff;
   text-decoration: none;
-}
-
-img.main-image {
-  width: 100%;
-  height: auto;
-  max-width: 600px; /* 필요하면 최대 너비 제한 */
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
 }
 
 .image-gallery-slides {
@@ -47,4 +49,10 @@ img.main-image {
   color: #333;
   font-weight: bold;
   font-size: 14px;
+}
+
+::placeholder {
+  font-family: "GowunBatang-Regular", serif;
+  font-size: 14px;
+  color: gray;
 }

@@ -57,9 +57,9 @@ export default function Map({
       });
 
       var contentString = [
-        "<div style='padding: 5px;'>",
-        "<h3 style='margin:5px; font-size: 0.9em;'><strong>더파티움 안양</strong></h3>",
-        "<p style='margin:5px; font-size: 0.9em;'>4호선 평촌역 3번 출구</p>",
+        "<div style='padding: 10px;'>",
+        "<h3 style='margin: 0px; margin-bottom: 5px; font-size: 14px;'>더파티움 안양</h3>",
+        "<p style='margin: 0px; font-size: 14px;'>4호선 평촌역 3번 출구</p>",
         "</div>",
       ].join("");
 
@@ -71,12 +71,10 @@ export default function Map({
   }, [lat, lng, placeName]);
 
   return (
-    <>
-      <div style={{ height, padding: "80px 0 0 0", margin: "20px" }}>
-        <div id="map" style={{ width: "100%", height: "100%" }} />
-      </div>
-      <div style={{ textAlign: "center", marginTop: "20px" }}>
-        <h3 style={{ marginBottom: "10px" }}>📍지도 앱으로 보기</h3>
+    <p style={{ padding: "20px", marginTop: "80px" }}>
+      <div id="map" style={{ width: "100%", height: height }} />
+      <div style={{ marginTop: "20px" }}>
+        <h2 style={{ marginBottom: "10px" }}>📍지도 앱으로 보기</h2>
         <div
           style={{
             display: "flex",
@@ -96,6 +94,6 @@ export default function Map({
           </a>
         </div>
       </div>
-    </>
+    </p>
   );
 }
