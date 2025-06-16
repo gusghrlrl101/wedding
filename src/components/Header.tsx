@@ -3,7 +3,8 @@ export default function Header() {
     <header style={{ padding: "20px" }}>
       <img src="/main.jpeg" style={{ width: "100%", borderRadius: "12px" }} />
       <h1 style={{ marginTop: "40px", marginBottom: "60px" }}>
-        손정민 <span style={{ fontSize: "18px" }}>♥</span> 임현호
+        임현호 <span style={{ fontSize: "18px", color: "#ffb6c1" }}>♥</span>{" "}
+        손정민
       </h1>
       <p>
         <h3 style={{ marginBottom: "0px" }}>
